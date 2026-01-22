@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+    <link rel="stylesheet" href="styles/panel.css" />
+    <title>Panel de control - Trollas. Inc. Editor</title>
+  </head>
+  <body>
+    <div class="panel-usr">
+      <img id="usrIcon" src="img/usr_default_icon.png" />
+      <h2 class="title" id="usrName">Usuario</h2>
+      <h5 class="title" id="usrEmail">Correo</h5>
+      <h5 class="title" id="usrId">ID</h5>
+    </div>
+    <div class="panel-toolbar">
+      <h2 class="title">Panel de control</h2>
+      <a id="logoutBtn" class="nav-link link-btn" style="cursor: pointer">
+        Cerrar sesión →
+      </a>
+    </div>
+    <div class="webs-panel">
+      <div class="head-title">
+        <h2 class="title">Tus webs</h2>
+        <button
+          id="createWebBtn"
+          class="nav-link link-btn"
+          style="cursor: pointer">
+          Crear →
+        </button>
+      </div>
+      <div id="websContainer" class="webs-container">
+        <p>
+          No has creado ninguna web aún. Haz clic en el botón "Crear" para
+          empezar.
+        </p>
+      </div>
+    </div>
+    <script type="module" src="scripts/login/usrdata.js"></script>
+    <script type="module" src="scripts/login/logout.js"></script>
+    <script type="module" src="scripts/panel/panel.js"></script>
+    <script type="module" src="scripts/login/session.js"></script>
+  </body>
+</html>

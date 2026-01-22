@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Trollas. Inc. Editor</title>
+    <link rel="stylesheet" href="styles/login.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <h2 class="title">Login / Registro</h2>
+      <div class="container">
+        <input
+          type="email"
+          id="email"
+          class="text"
+          placeholder="Correo electrónico" />
+        <input
+          type="password"
+          id="password"
+          class="text"
+          placeholder="Contraseña" />
+        <div style="display: flex; gap: 10px; justify-content: center">
+          <button id="loginBtn" class="text" style="cursor: pointer">
+            Entrar →
+          </button>
+          <button id="registerBtn" class="text" style="cursor: pointer">
+            Registrarse
+          </button>
+        </div>
+        <p id="errorMsg" class="text" style="color: #f87171"></p>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/login/login.js"></script>
+  </body>
+</html>
