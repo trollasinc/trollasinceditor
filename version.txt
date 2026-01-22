@@ -10,3 +10,10 @@ Version: BETA 2026.01.22.2
 Date: 22/01/2026
 Time: 17:35
 New features: Corrección de bugs en el login
+
+
+--- BETA 2026.01.22.3 ---
+Version: BETA 2026.01.22.3
+Date: 22/01/2026
+Time: 17:55
+New features: Avances en el editor.

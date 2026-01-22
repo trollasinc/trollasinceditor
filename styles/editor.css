@@ -1,15 +1,20 @@
 
- .izq-panel {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: min(300px, 20%);
-    height: 100%;
-    background-color: #f4f4f4;
-    border-right: 1px solid #ccc;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    z-index: 1000;
-    }
+.izq-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: min(300px, 20%);
+  height: 100%;
+  background-color: #f4f4f4;
+  border-right: 1px solid #ccc;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
 
  .dcha-panel {
     position: fixed;
@@ -21,6 +26,8 @@
     border-left: 1px solid #ccc;
     box-shadow: -2px 0 5px rgba(0,0,0,0.1);
     z-index: 1000;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
     }
 
  #web {
@@ -30,3 +37,14 @@
     overflow: auto;
     background: white;
     }
+
+    .tool-btn {
+        background: none;
+        border: none;
+    }
+
+#saveWebBtn {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
