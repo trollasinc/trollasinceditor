@@ -20,7 +20,7 @@ loginBtn.addEventListener("click", () => {
     .signInWithEmailAndPassword(email, password)
     .then(() => {
       errorMsg.textContent = "";
-      window.location.href = "../../panel.html";
+      window.location.href = "panel.html";
     })
     .catch((error) => {
       errorMsg.textContent = error.message;
